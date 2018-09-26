@@ -8,20 +8,21 @@ function createNewPost(event) {
 
     console.log(title, content, tag, user);
     // set values to an object
+    const objToPost = {
+        title,
+        content,
+        tag,
+        user
+    }
     // post that object to the backend
+    axios.post('http://localhost:3000/posts', objToPost)
     // get a response
-    // return a success or a failure
-
-  
-//   axios.post('localhost:3000/', {
-//     userId: '',
-//     title: 
-//     completed: false
-//   })
-//   .then(function (response) {
-    
-//   })
-//   .catch(function (error) {
-    
-//   });
+        .then(results => {
+            //Success
+            console.log(results);
+        })
+        .catch(err => {
+            //failure
+            console.log(error); 
+        })
 }
