@@ -1,74 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="index.css">
 
-    <title>G101 Blog!</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+
+
+  <title>G101 Blog!</title>
 
 </head>
+
 <body>
-        <div class="jumbotron">
-                <h1 class="display-4">Welcomne to G101 Blog!</h1>
-                <p class="lead">Ajax Blog</p>
-                <hr class="my-4">
-                <p>Unit 56</p>
-                <p class="lead">
-                  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                </p>
-              </div>
+  <div class="jumbotron">
+    <h1 class="display-4">Welcomne to G101 Blog!</h1>
+    <p class="lead">Ajax Blog</p>
+    <hr class="my-4">
+    <p>Unit 56</p>
 
-              <div class="container">
-                    <h2>Title</h2>
-                    <form>
-                      <div class="form-group">
-                        <label for="comment">Content:</label>
-                        <textarea class="form-control" rows="5" id="content"></textarea>
-                        <input type="submit" value="Submit">
-                      </div>
-                    </form>
-                  </div>
-                  <!-- coment box -->
+  </div>
 
-                  <form class= "commentername">
-                    First name: <input type="text" name="FirstName" value=""><br>
-                    Last name: <input type="text" name="LastName" value=""><br>
-                    </form>
-                    
-                    
-                    
-                  <div class="container">
-                        <h2>Post your comments here</h2>
-                        <form>
-                          <div class="form-group">
-                            <label for="coment">Comment:</label>
-                            <textarea class="form-control" rows="5" id="comment"></textarea>
-                            <input type="submit" value="Submit">
-                          </div>
-                        </form>
-                      </div>
+  <div class="container">
+    <form class="form" onsubmit="createNewPost(event)">
+      <div class="form-group">
+        <label for="post-title">Title:</label>
+        <input
+          id="post-title" 
+          type="text" 
+          class="form-control" 
+          name="title">
+      </div>
+      <div class="form-group">
+        <label for="post-content">Content:</label>
+        <textarea
+          id="post-content"
+          class="form-control" 
+          rows="5" 
+          id="post-content" 
+          name="post-content"
+          value="">
+      </textarea>
+      </div>
+      <div class="form-group">
+        <label for="post-tag">Tag:</label>
+        <input 
+          type="text" 
+          class="form-control" 
+          name="tag" 
+          id="post-tag">
+      </div>
+      <div class="form-group">
+        <label for="post-user">User:</label>
+        <input type="text" class="form-control" id="post-user">
+      </div>
+      <div class="form-group">
+          <button type="Submit1" class="btn btn-info btn-large">Submit</button>
+      </div>
+    </form>
+  </div>
 
-
-
-
-
-</div>
-
-
-    
-    
-
- 
-        
-    </header>
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
-<script src="index.js"></script>
-</div>
-</body
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+  <script src="index.js"></script>
+  </div>
+</body>
 </html>
