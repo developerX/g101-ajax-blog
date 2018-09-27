@@ -2,7 +2,7 @@ const view = document.getElementById('view');
 
 
 function goToForm() {
-    view.innerHTML = " I am the form"
+    view.innerHTML = " "
 }
 
 
