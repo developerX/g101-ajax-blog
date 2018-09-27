@@ -30,9 +30,9 @@ function createNewPost(event) {
 const view = document.getElementById('view');
 
 
-function goToForm() {
-    view.innerHTML = " I am the form"
-}
+// function goToForm() {
+//     view.innerHTML = " I am the form"
+// }
 
 
 // windows location.hash
