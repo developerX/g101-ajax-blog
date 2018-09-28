@@ -1,9 +1,9 @@
 let createPost = document.getElementById("newPost");
-createPost.addEventListener("click", function( event ) {
+createPost.addEventListener("click", function (event) {
     event.preventDefault();
     window.location.hash = `#/posts/new`
     // newPost();
-document.getElementById("view").innerHTML =`
+    document.getElementById("view").innerHTML = `
 <div class="container">
     <form id="form" class="form" onsubmit="createNewPost(event)">
       <div class="form-group">
@@ -42,5 +42,5 @@ document.getElementById("view").innerHTML =`
       </div>
     </form>
   </div>
-`  
+`
 });

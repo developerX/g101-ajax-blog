@@ -1,3 +1,11 @@
+const view = document.getElementById('view');
+
+function goToForm() {
+    view.innerHTML = ``
+}
+
+
+
 function createNewPost(event) {
     event.preventDefault();
     // grab the values we need
@@ -14,6 +22,7 @@ function createNewPost(event) {
         tag,
         user
     }
+    
     // post that object to the backend
     axios.post('http://localhost:3000/posts', objToPost)
     // get a response
@@ -27,12 +36,6 @@ function createNewPost(event) {
         })
 }
 
-const view = document.getElementById('view');
-
-
-// function goToForm() {
-//     view.innerHTML = " I am the form"
-// }
 
 
 // windows location.hash
