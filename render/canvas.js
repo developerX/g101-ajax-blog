@@ -40,5 +40,26 @@ function goToForm() {
       </div>
     </form>
   </div>
+  <div class="form-group">
+        <label for="post-user1">User:</label>
+        <input type="text" class="form-control" id="post-user1">
+      </div>
+  <div class="form-group">
+        <label for="post-comment">Comments:</label>
+        <textarea
+          id="post-comment"
+          class="form-control" 
+          rows="5" 
+          id="post-comment" 
+          name="post-comment"
+          value="">
+      </textarea>
+      </div>
+      <div class="form-group">
+      <div class="form-group">
+      <button type="Submit2" class="btn btn-info btn-large">Submit</button>
+  </div>
+  
+  
     `
 }
