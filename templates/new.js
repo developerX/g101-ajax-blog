@@ -18,14 +18,20 @@ function createNewPost(event) {
     // post that object to the backend
     axios.post('http://localhost:3000/posts', objToPost)
     // get a response
-        .then(results => {
-            //Success
-            console.log(results);
-        })
-        .catch(err => {
+    .then(results => {
+        //Success
+        console.log(results);
+        goToPosts();
+        postEntity(results.data.id);
+    })
+    .catch(err => {
             //failure
             console.log(err); 
         })
+        // prompt("Are you sure?"){
+        //     refresh === true
+        // }
+        // window.location.replace("index.html");
 }
 
 

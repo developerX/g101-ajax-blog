@@ -35,7 +35,7 @@ function goToForm() {
         <label for="post-user">User:</label>
         <input type="text" class="form-control" id="post-user">
       </div>
-      <div class="form-group">
+      <div class="form-group" id="">
           <button type="Submit1" class="btn btn-info btn-large">Submit</button>
       </div>
     </form>

@@ -21,4 +21,14 @@ router();
 
 
 
+
+window.onload = function () {
+    console.log(" I am working right here");
+    axios.get("http://localhost:3000/posts")
+    .then(posts => {
+        postsRender(posts.data)
+    })
+}
+
+
    
